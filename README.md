@@ -2,9 +2,6 @@
 
 A modern full-stack web application for efficient vehicle parking slot booking and management. EazyParking offers a clean and responsive frontend built with React and TypeScript, backed by RESTful APIs in Node.js and Express.
 
-🔗 **Live Demo**: [Eazyparking](https://eazyparking.tech/)  
-
-
 ---
 
 ## 📋 Table of Contents
@@ -12,17 +9,16 @@ A modern full-stack web application for efficient vehicle parking slot booking a
 - [EazyParking: Parking Management System](#eazyparking-parking-management-system)
   - [📋 Table of Contents](#-table-of-contents)
   - [🚀 Features](#-features)
-  - [⚙️ Tech Stack](#️-tech-stack)
+  - [⚙ Tech Stack](#-tech-stack)
     - [Frontend](#frontend)
     - [Backend](#backend)
     - [Dev Tools](#dev-tools)
-  - [📸 Screenshots](#-screenshots)
-  - [🛠️ Installation](#️-installation)
+  - [🛠 Installation](#-installation)
     - [Clone the Repo](#clone-the-repo)
     - [1️⃣ Backend Setup](#1️⃣-backend-setup)
     - [2️⃣ Frontend Setup](#2️⃣-frontend-setup)
   - [🧾 Environment Variables](#-environment-variables)
-  - [🗃️ Database Schema](#️-database-schema)
+  - [🗃 Database Schema](#-database-schema)
   - [📁 Project Structure](#-project-structure)
   - [🔮 Future Improvements](#-future-improvements)
   - [📄 License](#-license)
@@ -41,118 +37,106 @@ A modern full-stack web application for efficient vehicle parking slot booking a
 
 ---
 
-## ⚙️ Tech Stack
+## ⚙ Tech Stack
 
 ### Frontend
-- **React**
-- **TypeScript**
-- **React Router**
-- **Axios**
-- **Tailwind CSS** *(if used)*
+- *React*
+- *TypeScript*
+- *React Router*
+- *Axios*
+- *Tailwind CSS*
 
 ### Backend
-- **Node.js**
-- **Express.js**
-- **MySQL**
-- **JWT for Authentication**
-- **bcrypt for Password Hashing**
+- *Node.js*
+- *Express.js*
+- *MySQL*
+- *JWT for Authentication*
+- *bcrypt for Password Hashing*
 
 ### Dev Tools
-- **Git & GitHub**
-- **Postman** for API testing
-- **Koyeb** for deployment
+- *Git & GitHub*
+- *Postman* for API testing
 
----
 
-## 📸 Screenshots
-
-*(Add actual screenshots or GIFs to improve clarity)*
-
-| User Dashboard | Admin Panel |
-|----------------|-------------|
-| ![User](screenshots/user-dashboard.png) | ![Admin](screenshots/admin-panel.png) |
-
----
-
-## 🛠️ Installation
+## 🛠 Installation
 
 ### Clone the Repo
 
-```bash
+bash
 git clone https://github.com/latelateef/Vehicle-Parking-Booking-System-SE-Project-.git
 cd Vehicle-Parking-Booking-System-SE-Project-
-```
+
 
 ---
 
 ### 1️⃣ Backend Setup
 
-```bash
+bash
 cd backend
 npm install
-```
 
-Create a `.env` file:
 
-```env
+Create a .env file:
+
+env
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=eazyparking
 JWT_SECRET=your_jwt_secret
-```
+
 
 Run the server:
 
-```bash
+bash
 npm run dev
-```
+
 
 ---
 
 ### 2️⃣ Frontend Setup
 
-```bash
+bash
 cd frontend
 npm install
 npm run dev
-```
+
 
 ---
 
 ## 🧾 Environment Variables
 
-Make sure your `.env` file in the backend contains:
+Make sure your .env file in the backend contains:
 
-```env
+env
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=eazyparking
 JWT_SECRET=your_jwt_secret
-```
+
 
 ---
 
-## 🗃️ Database Schema
+## 🗃 Database Schema
 
 Key tables:
 
-- `users`: user info (role, email, password)
-- `slots`: parking slots with status (available/booked)
-- `bookings`: reservation data (slot ID, user ID, timestamp)
-- `admins`: admin accounts
-- `payments`: *(optional, if Razorpay integration is added later)*
+- users: user info (role, email, password)
+- slots: parking slots with status (available/booked)
+- bookings: reservation data (slot ID, user ID, timestamp)
+- admins: admin accounts
+- payments: (optional, if Razorpay integration is added later)
 
-SQL dump can be found in `backend/database/schema.sql`.
+SQL dump can be found in backend/database/schema.sql.
 
 ---
 
 ## 📁 Project Structure
 
-```
+
 Vehicle-Parking-Booking-System/
 ├── backend/
 │   ├── controllers/
@@ -168,7 +152,7 @@ Vehicle-Parking-Booking-System/
 │   │   ├── services/
 │   │   └── App.tsx
 ├── README.md
-```
+
 
 ---
 
